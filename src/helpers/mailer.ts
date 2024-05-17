@@ -19,8 +19,8 @@ export const sendEmail = async({email,emailType,userId}:any)=>{
           host: "sandbox.smtp.mailtrap.io",
           port: 2525,
           auth: {
-            user: "07e301dc7a1f6e", // 
-            pass: "964621bf393d05" //
+            user: process.env.MAILTRAP_USER, // 
+            pass: process.env.MAILTRAP_PASS //
           }
         });
 
